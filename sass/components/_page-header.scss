@@ -1,0 +1,12 @@
+.main {
+    border-bottom: 1px solid #ECECEC;
+}
+
+.page-header {
+    display: flex;
+    align-items: center;
+}
+
+.page-header__accent {
+    color: $title-text-color;
+}

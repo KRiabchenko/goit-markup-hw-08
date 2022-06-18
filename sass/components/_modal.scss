@@ -1,0 +1,236 @@
+.backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+
+    width: 100%;
+    height: 100%;
+
+    background-color: rgba(0, 0, 0, 0.2);
+
+    opacity: 1;
+    transition: opacity 250ms $timing-function;
+}
+
+.backdrop.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+    visibility: hidden;
+}
+
+.backdrop.is-hidden .modal {
+    transform: translate(-50%, -50%) scale(1.1);
+}
+
+.modal {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+
+    width: 528px;
+    height: 581px;
+    padding: 40px;
+
+    background-color: #FFFFFF;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+        0px 1px 1px rgba(0, 0, 0, 0.14),
+        0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+
+    transform: translate(-50%, -50%) scale(1);
+
+    transition: transform 250ms $timing-function;
+}
+
+.modal__form {
+    max-width: 528px;
+}
+
+.modal__title {
+    margin: 0;
+    padding-bottom: 12px;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+
+    color: $title-text-color;
+}
+
+.modal__field {
+    display: flex;
+    flex-direction: column;
+}
+
+.modal-user {
+    width: 448px;
+    height: 58px;
+    margin-bottom: 10px;
+}
+
+.user {
+    position: relative;
+
+    display: block;
+    text-align: start;
+    margin-bottom: 10px;
+
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.16;
+    letter-spacing: 0.01em;
+
+    color: $primary-text-color;
+
+    &:focus-within>.user__icon {
+            fill: $accent-color;
+        }
+}
+
+.user__input {
+    width: 100%;
+    height: 40px;
+    margin-top: 4px;
+    padding-left: 42px;
+
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    transition: border 250ms $timing-function;
+
+    &:focus, &:hover {
+            outline: none;
+            border: 1px solid $accent-color;
+        }
+}
+
+.user__icon {
+    position: absolute;
+    top: 70%;
+    left: 15px;
+    transform: translateY(-70%);
+
+    transition: fill 250ms $timing-function;
+}
+
+.user--comment {
+    margin-bottom: 4px;
+}
+
+.user__texterea {
+    resize: none;
+    height: 120px;
+    padding: 12px 16px;
+    margin-bottom: 20px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+
+    &::placeholder {
+            font-style: normal;
+            font-weight: 400;
+            font-size: 12px;
+            line-height: 1.16;
+            letter-spacing: 0.01em;
+    
+            color: rgba(117, 117, 117, 0.5)
+        }
+}
+
+.checkbox {
+    @include centeredFlex (flex);
+    text-align: center;
+    padding-left: 9px;
+    padding-top: 4px;
+    margin: 0;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+}
+
+.checkbox__input {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+
+    &:checked+.checkbox__box {
+                background-color: $accent-color;
+                border-color: $accent-color;
+            }
+}
+
+.checkbox__icon {
+    fill: transparent;
+}
+
+.checkbox__box {
+    @include centeredFlex (flex);
+    width: 16px;
+    height: 15px;
+    margin-right: 9px;
+    border: 2px solid $title-text-color;
+    border-radius: 3px;
+}
+
+.checkbox__input:checked+.checkbox .checkbox__icon {
+    fill: $white-color;
+    border: 0.2px solid #FFFFFF;
+}
+
+
+.checkbox__link {
+    color: $accent-color;
+    margin-left: 2px;
+}
+
+.modal__button {
+    @extend %button;
+    margin-top: 30px;
+    padding: 10px 55px;
+
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+
+    transition: background-color 250ms $timing-function;
+
+    &:hover, &:focus {
+            background-color: #188CE8;
+        }
+}
+
+.modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+
+    width: 30px;
+    height: 30px;
+    padding: 0;
+
+    background-color: #FFFFFF;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 15px;
+    cursor: pointer;
+
+    &:focus-within > .modal-close__icon,
+        &:hover > .modal-close__icon {
+            fill: $accent-color;
+        }
+}
+
+.modal-close__icon {
+    display: block;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    margin-left: 5px;
+
+    transition: fill 250ms $timing-function;
+
+}
