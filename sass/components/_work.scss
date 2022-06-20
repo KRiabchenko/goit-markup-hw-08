@@ -4,6 +4,10 @@
 
 .command {
     display: flex;
+
+    @media screen and (max-width: 480px) {
+            display: block;
+        }
 }
 
 .command__item {
@@ -18,6 +22,10 @@
 
     &:first-child {
             margin-left: 0;
+        }
+
+    @media screen and (max-width:480px) {
+            width: 450px;
         }
 }
 
