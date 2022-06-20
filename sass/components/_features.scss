@@ -41,9 +41,17 @@
     margin: 15px;
     border-radius: 4px;
 
-    @media screen and (min-width:480px) {
-        width: 450px;
-    }
+    @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+    
+    @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    
+    @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
 }
 
 .features__icon {
@@ -56,7 +64,13 @@
 
     background-color: $secondary-bgc-color;
 
-    @media screen and (min-width:480px) {
+    @media screen and (min-width: 480px) {
             width: 450px;
+        }
+    @media screen and (min-width: 768px) {
+            width: 354px;
+        }
+    @media screen and (min-width: 1200px) {
+            width: 270px;
         }
 }

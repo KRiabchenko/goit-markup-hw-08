@@ -7,6 +7,10 @@
         padding-top: 118px;
         padding-bottom: 118px;        
     }
+    @media screen and (max-width: 768px) {
+            padding-top: 118px;
+            padding-bottom: 118px;
+        }
 }
 
 .hero__title {
@@ -25,6 +29,10 @@
             font-size: 26px;
             line-height: 1.62;
         }
+    @media screen and (max-width: 768px) {
+            
+        }
+
 }
 
 .hero__button {
@@ -53,4 +61,5 @@
             width: 480px;
             height: 400px;
         }
+
 }

@@ -24,6 +24,7 @@ body {
 }
 
 .container {
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin-left: auto;
@@ -36,15 +37,15 @@ body {
   }
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (max-width: 768px) {
   .container {
-    min-width: 768px;
+    width: 768px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media screen and (max-width: 1200px) {
   .container {
-    min-width: 1200px;
+    width: 1200px;
   }
 }
 
@@ -240,6 +241,13 @@ ul {
 }
 
 @media screen and (max-width: 480px) {
+  .hero {
+    padding-top: 118px;
+    padding-bottom: 118px;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .hero {
     padding-top: 118px;
     padding-bottom: 118px;
@@ -615,6 +623,18 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .features__item {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__item {
+    width: 270px;
+  }
+}
+
 .features__icon {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -638,7 +658,25 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) {
+  .features__icon {
+    width: 354px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .features__icon {
+    width: 270px;
+  }
+}
+
 @media screen and (max-width: 480px) {
+  .section--examples {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .section--examples {
     display: none;
   }
@@ -724,6 +762,15 @@ ul {
 @media screen and (max-width: 480px) {
   .command__item {
     width: 450px;
+    margin-left: 0;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .command__item {
+    width: 354px;
+    margin-top: 30px;
   }
 }
 
