@@ -1,17 +1,55 @@
 .clients {
     display: flex;
+
+    @media screen and (min-width: 480px) {
+            display: block;
+        }
+
+    @media screen and (min-width: 798px) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    @media screen and (min-width: 1200px) {
+            display: flex;
+        }
+        
 }
 
 .clients__item {
     display: flex;
     cursor: pointer;
     fill: #AFB1B8;
-    margin-left: 30px;
+    // margin-left: 30px;
+
+    // &:first-child {
+    //         margin-left: 0;
+    //     }
+
+    @media screen and (min-width: 480px) {
+            margin-bottom: 30px;
+            margin-left: 30px;
+        }
+
+    @media screen and (min-width: 798px) {
+        margin-bottom: 30px;
+        margin-left: 30px;
+
+        &:first-child {
+                margin-left: 30px;
+            } 
+        }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 30px;
 
     &:first-child {
             margin-left: 0;
         }
-}
+    };
+        
+    }    
+
 
 .clients__link {
     @include centeredFlex (flex);
