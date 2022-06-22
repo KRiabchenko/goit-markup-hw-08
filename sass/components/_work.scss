@@ -5,7 +5,7 @@
 .command {
     display: flex;
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 480px) {
         display: block;
         }
 
@@ -29,7 +29,7 @@
     //         margin-left: 0;
     //     }
 
-    @media screen and (min-width: 480px) {
+    @media screen and (max-width: 480px) {
         margin-bottom: 30px;
         }
 
