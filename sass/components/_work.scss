@@ -1,18 +1,32 @@
 .section--command {
     background-color: $secondary-bgc-color;
 
+    @media screen and (max-width: 767px) {
+            width: 480px;
+        }
+
 }
 
 .command {
-    display: flex;
-
-    @media screen and (max-width: 767px) {
-            display: block;
+    display: block;
+    
+        @media screen and (min-width: 480px) {
+            width: 450px;
+        }
+    
+        @media screen and (max-width: 767px) {
+            width: 450px;
         }
     
         @media screen and (min-width: 768px) {
             display: flex;
             flex-wrap: wrap;
+            width: 768px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            display: flex;
+            width: 1200px;
         }
 }
 
@@ -40,11 +54,18 @@
 
     @media screen and (min-width: 768px) {
             margin-bottom: 30px;
-            margin-left: 30px;
+            margin: 15px;
+
+            &:nth-last-child(-n+2) {
+                    margin-bottom: 0;
+                }
         }
 
-    @media screen and (min-width: 1200px) {
+    @media screen and (min-width: 1200px) { 
         margin-left: 30px;
+        margin-right: 0;
+        margin-top: 0;
+        margin-bottom: 0;
 
         &:first-child {
                 margin-left: 0;
