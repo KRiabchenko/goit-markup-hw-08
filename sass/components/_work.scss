@@ -1,22 +1,23 @@
 .section--command {
     background-color: $secondary-bgc-color;
+
 }
 
 .command {
     display: flex;
 
-    @media screen and (max-width: 480px) {
-        display: block;
+    @media screen and (max-width: 767px) {
+            display: block;
         }
-
-    @media screen and (min-width: 768px) {
-        display: flex;
-        flex-wrap: wrap;
+    
+        @media screen and (min-width: 768px) {
+            display: flex;
+            flex-wrap: wrap;
         }
 }
 
 .command__item {
-    margin-left: 30px;
+    // margin-left: 30px;
 
     box-sizing: border-box;
     border-radius: 0px 0px 4px 4px;
@@ -29,15 +30,21 @@
     //         margin-left: 0;
     //     }
 
-    @media screen and (max-width: 480px) {
+    @media screen and (max-width: 767px) {
         margin-bottom: 30px;
+
+        &:last-child {
+                margin-bottom: 0;
+            }
         }
 
     @media screen and (min-width: 768px) {
             margin-bottom: 30px;
+            margin-left: 30px;
         }
 
     @media screen and (min-width: 1200px) {
+        margin-left: 30px;
 
         &:first-child {
                 margin-left: 0;
