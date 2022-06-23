@@ -1,10 +1,19 @@
 .container--footer {
     display: flex;
 
-    // @media screen and (max-width: 480px) {
-    //         display: block; 
-    //     }
+    @media screen and (max-width: 767px) {
+        display: block;
+    }
 
+    @media screen and (min-width: 768px) {
+        width: 768px;
+        flex-wrap: wrap;
+    }
+        
+    @media screen and (min-width: 1200px) {
+        min-width: 1200px;
+        flex-wrap: nowrap;
+    }
 }
 
 .footer {
@@ -13,15 +22,45 @@
     padding-bottom: 60px;
     background-color: $hero-bgc-color;
 
-    // @media screen and (max-width: 480px) {
-    //     width: 480px;
-    //     height: 603px;
-    //     }
+    @media screen and (max-width: 767px) {
+        width: 480px;
+        height: 603px;
+        }
+
+    @media screen and (min-width: 768px) {
+        min-width: 768px;
+        height: 463px;
+        }
+
+   @media screen and (min-width: 1200px) {
+    //    width: 1600px;
+       height: 252px;
+   }
+
 }
 
 .footer__contacts {
-    display: block;
-    
+    display: block;  
+
+    @media screen and (max-width: 767px) {
+      justify-content: center;
+      align-items: center;  
+      text-align: center;
+    }
+
+    @media screen and (min-width: 768px) {
+        width: 232px;
+        margin-left: 76px;
+
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+    }
+
+    @media screen and (min-width: 1200px) {
+        margin-left: 0;
+        text-align: start;
+    }
 }
 
 .footer__address {
@@ -34,6 +73,7 @@
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
 }
 
 .footer__accent {
@@ -42,6 +82,18 @@
 
 .footer__nav {
     display: block;
+
+    @media screen and (max-width:767px) {
+        margin-left: 155px;
+    }
+
+    @media screen and (min-width:768px) {
+        margin-left: 50px;
+    }
+
+    @media screen and (min-width:1200px) {
+        margin-left: 0;
+    }
 }
 
 .footer__link {
@@ -60,7 +112,7 @@
             color: $accent-color;
             text-decoration: none;
         }
-
+     
 }
 
 .footer__link--mail {
