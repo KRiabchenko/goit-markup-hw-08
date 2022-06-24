@@ -1,16 +1,14 @@
 .hero {
     text-align: center;
-    padding-top: 200px;
-    padding-bottom: 200px;
-
-    @media screen and (max-width: 480px) {
+    
+    @media screen and (max-width: 1199px){
         padding-top: 118px;
         padding-bottom: 118px;        
     }
-    @media screen and (max-width: 768px) {
-            padding-top: 118px;
-            padding-bottom: 118px;
-        }
+    @media screen and (min-width: 1200px) {
+        padding-top: 200px;
+        padding-bottom: 200px;
+    }
 }
 
 .hero__title {
@@ -20,19 +18,15 @@
     color: $primary-bgc-color;
 
     font-weight: 900;
-    font-size: 44px;
-    line-height: 1.36;
+    font-size: 26px;
+    line-height: 1.62;
     letter-spacing: 0.06em;
     text-transform: uppercase;
 
-    @media screen and (max-width: 480px) {
-            font-size: 26px;
-            line-height: 1.62;
+    @media screen and (min-width: 1200px){
+        font-size: 44px;
+        line-height: 1.36;
         }
-    @media screen and (max-width: 768px) {
-            
-        }
-
 }
 
 .hero__button {
@@ -45,8 +39,6 @@
 }
 
 .overlay {
-    max-width: 1600px;
-    height: 600px;
     margin-left: auto;
     margin-right: auto;
     background-image: linear-gradient(to right,
@@ -61,5 +53,15 @@
             width: 480px;
             height: 400px;
         }
+
+    @media screen and (min-width: 480px) and (max-width: 1199px) {
+        width: 768px;
+        height: 400px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        max-width: 1600px;
+        height: 600px;
+    }
 
 }
