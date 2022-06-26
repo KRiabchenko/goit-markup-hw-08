@@ -10,6 +10,12 @@
 
     opacity: 1;
     transition: opacity 250ms $timing-function;
+
+    overflow-y: scroll;
+
+    @media screen and (min-width:1200px) {
+        overflow-y: none;
+        }
 }
 
 .backdrop.is-hidden {
@@ -27,8 +33,8 @@
     top: 50%;
     left: 50%;
 
-    width: 528px;
-    height: 581px;
+    width: 450px;
+    height: 609px;
     padding: 40px;
 
     background-color: #FFFFFF;
@@ -40,6 +46,11 @@
     transform: translate(-50%, -50%) scale(1);
 
     transition: transform 250ms $timing-function;
+
+    @media screen and (min-width:1200px) {
+        width: 528px;
+        height: 581px;   
+    }
 }
 
 .modal__form {
@@ -52,11 +63,16 @@
     font-style: normal;
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.50;
     text-align: center;
     letter-spacing: 0.03em;
 
     color: $title-text-color;
+
+    @media screen and (min-width:1200px) {
+        font-size: 20px;
+        line-height: 1.15;
+        }
 }
 
 .modal__field {
@@ -65,9 +81,13 @@
 }
 
 .modal-user {
-    width: 448px;
+    width: 370px;
     height: 58px;
     margin-bottom: 10px;
+
+    @media screen and (min-width:1200px) {
+    width: 448px;
+    }
 }
 
 .user {
@@ -131,23 +151,35 @@
     &::placeholder {
             font-style: normal;
             font-weight: 400;
-            font-size: 12px;
-            line-height: 1.16;
+            font-size: 14px;
+            line-height: 1.14;
             letter-spacing: 0.01em;
     
             color: rgba(117, 117, 117, 0.5)
         }
+
+    @media screen and (min-width:1200px) {
+        &::placeholder {
+        font-size: 12px;
+        line-height: 1.16;
+        }
+        
+    }    
 }
 
 .checkbox {
     @include centeredFlex (flex);
     text-align: center;
-    padding-left: 9px;
     padding-top: 4px;
     margin: 0;
-    font-size: 14px;
+    font-size: 12px;
     line-height: 1.71;
     letter-spacing: 0.03em;
+
+    @media screen and (min-width:1200px) {
+        font-size: 14px;
+        line-height: 1.16;
+        }
 }
 
 .checkbox__input {
