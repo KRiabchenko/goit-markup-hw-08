@@ -4,6 +4,7 @@
     overflow: hidden;
 
     transition: background-color 250ms $timing-function;
+
 }
 
 .foto__overlay {
@@ -49,7 +50,7 @@
 /* ------------------- PORTFOLIO BUTTONS --------------- */
 .section--gallery {
     @media screen and (max-width: 767px) {
-            width: 480px;
+            min-width: 480px;
         }
 }
 

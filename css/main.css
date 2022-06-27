@@ -1733,6 +1733,12 @@ ul {
   }
 }
 
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card-set {
+    margin: -15px;
+  }
+}
+
 .card-set__elements {
   width: 370px;
   margin-right: 30px;
@@ -1747,6 +1753,13 @@ ul {
 .card-set__elements:hover {
   -webkit-box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (min-width: 768px) and (max-width: 1199px) {
+  .card-set__elements {
+    width: calc((100% - 4 * 15px) / 2);
+    margin: 15px;
+  }
 }
 
 @media screen and (min-width: 1200px) {
@@ -1826,7 +1839,7 @@ ul {
 /* ------------------- PORTFOLIO BUTTONS --------------- */
 @media screen and (max-width: 767px) {
   .section--gallery {
-    width: 480px;
+    min-width: 480px;
   }
 }
 
