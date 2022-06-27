@@ -1,25 +1,24 @@
 .main {
     position: relative;
     border-bottom: 1px solid #ECECEC; 
+
+    @media screen and (max-width:767px) {
+        min-width: 480px;
+    }
     
 }
 
 .page-header {
     display: flex;
     align-items: center;
+    height: 60px;
 
-    @media screen and (max-width:767px) {
-            width: 480px;
-            height: 60px;
-        }
-    
     @media screen and (min-width:768px) and (max-width:1199px) {
-            width: 738px;
             height: 80px;
         }
 
     @media screen and (min-width:1200px) {
-        width: 1170px;
+        width: 1200px;
         height: 80px;
     }
 }
@@ -64,7 +63,7 @@
     // height: 40px;
     display: inline-flex;
     margin: 0;
-    margin-left: 276px;
+    margin-left: auto;
     padding: 0;
     border: none;
     background-color: transparent;
