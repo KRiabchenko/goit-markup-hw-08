@@ -30,9 +30,12 @@
 .page-header__menu {
     text-align: center;
     
+    
     @media screen and (max-width:767px) {
         display: none; 
         position: absolute;
+
+        padding: 8px 40px 48px 40px;
         
         top: 100%;
         left: 0;
@@ -59,8 +62,8 @@
     }
 }
 .page-header__button {
-    // width: 40px;
-    // height: 40px;
+    width: 40px;
+    height: 40px;
     display: inline-flex;
     margin: 0;
     margin-left: auto;
@@ -68,6 +71,8 @@
     border: none;
     background-color: transparent;
     background-position: center;
+    background-size: contain;
+    align-items: center;
 
     @media screen and (min-width: 768px) {
         display: none;
@@ -92,3 +97,4 @@
 width: 19px;
 height: 19px;
 }
+
