@@ -1,23 +1,18 @@
 .social {
-    display: inline-block;
-
-    width: 206px;
-    height: 80px;
-    
-
-    @media screen and (max-width: 767px) {
-    width: 450px;
-    margin-left: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
     margin-top: 60px;
-    }
 
     @media screen and (min-width: 768px) {
-    margin-left: 165px;
-    }
+        margin-top: 0;
+        margin-left: 165px;
+        flex-direction: column;
+        justify-content: flex-start;
+        }
 
-    @media screen and (min-width: 1200px) {
-    margin-left: 70px;
-    }
 }
 
 .social__title {

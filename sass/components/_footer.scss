@@ -1,18 +1,16 @@
 .container--footer {
-    display: flex;
-
-    @media screen and (max-width: 767px) {
-        display: block;
-    }
+    display: block;
+    // width: 480px;
 
     @media screen and (min-width: 768px) {
-        width: 768px;
+        display: flex;
         flex-wrap: wrap;
+        // width: 768px;
     }
         
     @media screen and (min-width: 1200px) {
-        min-width: 1200px;
         flex-wrap: nowrap;
+
     }
 }
 
@@ -21,40 +19,17 @@
     padding-top: 60px;
     padding-bottom: 60px;
     background-color: $hero-bgc-color;
-
-    @media screen and (max-width: 767px) {
-        min-width: 480px;
-        height: 603px;
-        }
-
-    @media screen and (min-width: 768px) {
-        min-width: 768px;
-        height: 463px;
-        }
-
-   @media screen and (min-width: 1200px) {
-    //    width: 1600px;
-          height: 252px;
-   }
-
 }
 
 .footer__contacts {
     display: block;  
-
-    @media screen and (max-width: 767px) {
-      justify-content: center;
-      align-items: center;  
-      text-align: center;
-    }
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 
     @media screen and (min-width: 768px) {
         width: 232px;
-        margin-left: 76px;
-
-        justify-content: center;
-        align-items: center;
-        text-align: center;
+        margin-left: 76px;  
     }
 
     @media screen and (min-width: 1200px) {
@@ -82,22 +57,25 @@
 
 .footer__nav {
     display: block;
-
-    @media screen and (max-width:767px) {
-        margin-left: 155px;
-    }
-
+    
+    
     @media screen and (min-width:768px) {
-        margin-left: 50px;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        align-items: center;
     }
+    
 
     @media screen and (min-width:1200px) {
-        margin-left: 0;
+        justify-content: flex-start;
     }
 }
 
 .footer__link {
     display: flex;
+    justify-content: center;
     color: rgba(255, 255, 255, 0.6);
 
     font-style: normal;
