@@ -24,6 +24,7 @@
     @media screen and (min-width: 768px) {
         display: none;   
     }
+
 }
 
 .menu-open-btn,
@@ -38,6 +39,12 @@
     background-size: contain;
     align-items: center;
 
+    @media screen and (min-width: 768px) {
+        display: none;
+        }
+}
+
+.menu-open-btn {
     @media screen and (min-width: 768px) {
         display: none;
         }

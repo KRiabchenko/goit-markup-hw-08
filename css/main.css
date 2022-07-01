@@ -54,6 +54,12 @@ img {
   max-width: 100%;
 }
 
+.is-hidden {
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+
 .hero__button, .modal__button {
   min-width: 200px;
   font-family: inherit;
@@ -241,8 +247,7 @@ img {
     display: block;
     margin-top: 21px;
     margin-bottom: 21px;
-    margin-right: 15px;
-    margin-left: 21px;
+    margin-left: auto;
   }
 }
 
@@ -262,7 +267,6 @@ img {
   }
   .contacts__item:last-child {
     margin-bottom: 0px;
-    margin-left: 40px;
   }
 }
 
@@ -360,6 +364,12 @@ img {
 @media screen and (min-width: 768px) {
   .menu-open-btn,
   .menu-close-btn {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .menu-open-btn {
     display: none;
   }
 }
