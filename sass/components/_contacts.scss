@@ -1,18 +1,9 @@
 .contacts {
-    display: block;
+    display: none;
     align-items: center;
-    
-
-    @media screen and (max-width: 767px) {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column-reverse;
-        align-content: flex-start;
-        align-items: flex-start;
-        margin-top: 270px;
-    }
 
     @media screen and (min-width: 768px) and (max-width:1199px) {
+        display: block;
         margin-top: 21px;
         margin-bottom: 21px;
         margin-right: 15px;
@@ -26,10 +17,6 @@
 }
 
 .contacts__item {
-    @media screen and (max-width: 767px) {
-        margin-top: 32px;
-    }
-
     @media screen and (min-width: 768px) and (max-width:1199px) {
             margin-bottom: 10px;
             margin-left: 50px;
@@ -67,22 +54,6 @@
         color: $accent-color;
     } 
 
-    @media screen and (max-width: 767px) {
-        font-size: 24px;
-        line-height: 1.17;
-    }
-}
-
-.contacts__link--tel {
-    @media screen and (max-width: 767px) {
-        font-weight: 500;
-        font-size: 34px;
-        line-height: 1.18;
-        letter-spacing: 0.02em;
-        
-        color: $accent-color;
-    }
-
 }
 
 .contacts__icon {
@@ -90,8 +61,4 @@
     align-items: center;
     margin-right: 10px;
     fill: currentColor;
-
-    @media screen and (max-width: 767px) {
-        display: none;
-        }
 }

@@ -1,4 +1,4 @@
-.soc {
+.mob-soc {
     display: flex;
     align-items: center;
     margin-top: 64px;
@@ -8,13 +8,13 @@
     }
 }
 
-.soc__item {
+.mob-soc__item {
     @media screen and (min-width:768px) {
         display: none;
     }
 }
 
-.soc__link {
+.mob-soc__link {
     padding-left: 10px;
     padding-right: 10px;
 
@@ -28,6 +28,10 @@
 
     border-right: 1px solid rgba(33, 33, 33, 0.2);
     transform: rotate(90deg);
+
+    &:first-child {
+        padding-left: 0;
+    }
 
     &:last-child {
         border: none;
